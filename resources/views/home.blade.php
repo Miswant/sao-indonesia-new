@@ -54,6 +54,7 @@
 
 </head>
 
+
 <body>
 
     <!-- ======= Header ======= -->
@@ -93,8 +94,8 @@
                                     <li><a href="#">Drop Down 3</a></li>
                                     <li><a href="#">Drop Down 4</a></li>
                                 </ul>
-                            </li>
-                            <li><a class="nav-link scrollto" href="#contact">Contact</a></li> --}}
+                            </li> --}}
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 {{-- <i class="bi bi-list mobile-nav-toggle" data-bs-toggle="collapse" data-bs-target="#navbar"></i> --}}
 
@@ -119,6 +120,29 @@
             color: white;
             /* Change this to the desired color code for the active link */
         }
+
+        /* Style untuk tampilan desktop */
+        .img-fluid-desktop {
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Style untuk tampilan mobile */
+        @media (max-width: 767px) {
+            .img-fluid-desktop {
+                display: none;
+                /* Menyembunyikan gambar pada tampilan mobile */
+            }
+
+            .sao-logo {
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+                display: block;
+                position: center;
+            }
+
+        }
     </style>
 
     <!-- ======= Hero Section ======= -->
@@ -127,8 +151,8 @@
         <div class="container d-flex flex-column justify-content-center align-items-start text-center position-relative"
             data-aos="zoom-out">
             <div class="d-flex flex-row-reverse">
-                <img src="assets/img/hero-carousel/Sales-Account-Organizer.png" class="img-fluid animated"
-                    style="max-width: 50%; height: auto;">
+                <img src="assets/img/hero-carousel/Sales-Account-Organizer.png"
+                    class="img-fluid img-fluid-desktop animated" style="max-width: 50%; height: auto;">
                 <div>
                     <h2></h2>
                     <p></p>
@@ -137,7 +161,7 @@
                   <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
                     </div>
                     <h2>ONE TOUCH FOR ALL</h2>
-                    <img src="assets/img/saologo.png" alt="">
+                    <img src="assets/img/saologo.png" alt="" class="sao-logo">
                     <h3>(Sale Account Organizer)</h3>
                 </div>
             </div>
@@ -914,13 +938,12 @@
 
                 <div class="row">
                     <div class="col-lg-9 text-center text-lg-start">
-                        <h3>Call To Action</h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</p>
+                        <h3>Get Involved</h3>
+                        <p> Join us in making a difference. Contribute to meaningful projects and be part of our
+                            community. Together, we can achieve more and create a better future.</p>
                     </div>
                     <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Call To Action</a>
+                        <a class="cta-btn align-middle" href="#">Get Started</a>
                     </div>
                 </div>
 
@@ -933,9 +956,9 @@
 
                 <div class="section-title">
                     <h2>Portfolio</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Temukan berbagai proyek kreatif kami di sini. Setiap proyek memiliki keunikan dan inovasi yang
+                        kami
+                        tawarkan. Lihat dan temukan inspirasi baru!</p>
                 </div>
 
                 <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up"
@@ -1371,9 +1394,7 @@
 
                 <div class="section-title">
                     <h2>Contact</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Hubungi kami untuk pertanyaan lebih lanjut atau butuh bantuan silahkan kirim pesan!</p>
                 </div>
 
                 <div class="row">
@@ -1383,31 +1404,32 @@
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>Jl. Kartini Raya No.16, RT.13/RW.5, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta
+                                    Pusat, Daerah Khusus Ibukota Jakarta 10710</p>
                             </div>
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>1tech@satu-tech.com</p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
+                                <p>+62 21 21397171</p>
                             </div>
 
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                                frameborder="0" style="border:0; width: 100%; height: 290px;"
-                                allowfullscreen></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.802040827493!2d106.83378437586734!3d-6.15726196035062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4459bd72655%3A0xd23ee0aa58216cee!2sPt.%20Satu%20Anugrah%20Solusindo!5e0!3m2!1sid!2sid!4v1704959216326!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
                     </div>
 
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form onsubmit="openEmailClient(event)" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Your Name</label>
@@ -1426,11 +1448,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="name">Message</label>
-                                <textarea class="form-control" name="message" rows="10" required></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
-                                <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
                             <div class="text-center"><button type="submit">Send Message</button></div>
@@ -1535,6 +1556,27 @@
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+
+    <script>
+        function openEmailClient(event) {
+            event.preventDefault();
+
+            // Ambil nilai dari form fields
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            // Konstruksi URL "mailto" dengan subjek dan isi pesan
+            var mailtoLink = "mailto:1tech@satu-tech.com?subject=" + encodeURIComponent(subject) + "&body=" +
+                encodeURIComponent(message);
+
+            // Buka aplikasi email pengguna
+            window.location.href = mailtoLink;
+
+            // Tampilkan pesan setelah berhasil terkirim
+            var sentMessage = document.querySelector('.sent-message');
+            sentMessage.style.display = 'block'; // Menampilkan pesan
+        }
+    </script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
