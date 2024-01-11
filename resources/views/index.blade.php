@@ -1,9 +1,11 @@
 @include('head')
 @include('header')
-  <section id="hero-animated" class="hero-animated d-flex align-items-center">
-    <div class="container d-flex flex-column justify-content-center align-items-start text-center position-relative" data-aos="zoom-out">
+<section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-start text-center position-relative"
+        data-aos="zoom-out">
         <div class="d-flex flex-row-reverse">
-            <img src="assets/img/hero-carousel/Sales-Account-Organizer.png" class="img-fluid animated" style="max-width: 50%; height: auto;">
+            <img src="assets/img/hero-carousel/Sales-Account-Organizer.png" class="img-fluid animated"
+                style="max-width: 50%; height: auto;">
             <div>
                 <h2></h2>
                 <p></p>
@@ -12,7 +14,7 @@
                     <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
                 </div>
                 <h2>ONE TOUCH FOR ALL</h2>
-                <img src="assets/img/saologo.png" alt="">
+                <img src="assets/img/saologo.png">
                 <h3>(Sale Account Organizer)</h3>
             </div>
         </div>
@@ -20,188 +22,230 @@
 </section>
 
 
-  <!-- ======= Clients Section ======= -->
-  
+<!-- ======= Clients Section ======= -->
 
-  <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-out">
-            <div class="content px-xl-5">
+<section id="clients" class="clients">
+    <div class="container" data-aos="zoom-out">
+        <div class="content px-xl-5">
             <center>
-              <h3><strong>SAO</strong> Sudah di gunakan di berbagai bisnis dan industri</h3>
-              </center>
+                <h3><strong>SAO</strong> Sudah di gunakan di berbagai bisnis dan industri</h3>
+            </center>
+        </div>
+
+        <style>
+            .clients-slider {
+                overflow: hidden;
+                width: 100%;
+                position: relative;
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                animation: scrollImages 20s linear infinite;
+            }
+
+            @keyframes scrollImages {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/clients/abs.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/alfatech.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/btp.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/bts.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/dwp.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/ecclesia.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/g.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/gitaperkasa.png" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/logo-removebg-preview.png" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/map.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/mbi.png" class="img-fluid" alt="">
+                </div>
             </div>
-        
-      <style>
-        .clients-slider {
-              overflow: hidden;
-              width: 100%;
-              position: relative;
-          }
-
-          .swiper-wrapper {
-              display: flex;
-              animation: scrollImages 20s linear infinite;
-          }
-
-          @keyframes scrollImages {
-              0% {
-                  transform: translateX(0);
-              }
-              100% {
-                  transform: translateX(-100%);
-              }
-          }
-      </style>
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/abs.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/alfatech.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/btp.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/bts.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/dwp.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/ecclesia.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/g.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/gitaperkasa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/logo-removebg-preview.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/map.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/mbi.png" class="img-fluid" alt=""></div>
-          </div>
         </div>
         <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><img src="assets/img/clients/optima.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/penta.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/pjp.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/ramayanamotor.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/rodajaya.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/sevenmountain.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/stthbi.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/superban.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/tatawisata.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/triboga.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/vav.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/wilson.png" class="img-fluid" alt=""></div>
-              <!-- Add more slides here -->
-          </div>
+            <div class="swiper-wrapper align-items-center">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/optima.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/penta.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/pjp.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/ramayanamotor.png" class="img-fluid" alt=""></div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/rodajaya.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/sevenmountain.png" class="img-fluid" alt=""></div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/stthbi.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/superban.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/tatawisata.png" class="img-fluid" alt=""></div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/triboga.png" class="img-fluid" alt=""></div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/vav.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"><img
+                        src="assets/img/clients/wilson.png" class="img-fluid" alt="">
+                </div>
+                <!-- Add more slides here -->
+            </div>
         </div>
-      </div>
-    </section><!-- End Clients Section -->
+    </div>
+</section><!-- End Clients Section -->
 
-  <main id="main">
+<main id="main">
 
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
-      <div class="container">
+        <div class="container">
 
-        <div class="row gy-4">
-            <center>
-              <h3><strong>MENGAPA ANDA HARUS MENGGUNAKAN SALE ACCOUNT ORGANIZER?</strong></h3>
-            </center>
-          <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+            <div class="row gy-4">
+                <center>
+                    <h3><strong>MENGAPA ANDA HARUS MENGGUNAKAN SALE ACCOUNT ORGANIZER?</strong></h3>
+                </center>
+                <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-activity icon"></i></div>
               <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div> -->
-          <!-- End Service Item -->
+                <!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" >
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-book icon"></i></div>
-              <h4>CEPAT DAN MUDAH DIPAHAMI</h4>
-              <p>Program kami cukup mudah dipahami sehingga karyawan Anda dapat belajar menggunakannya dalam hitungan menit.</p>
-            </div>
-          </div><!-- End Service Item -->
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-book icon"></i></div>
+                        <h4>CEPAT DAN MUDAH DIPAHAMI</h4>
+                        <p>Program kami cukup mudah dipahami sehingga karyawan Anda dapat belajar menggunakannya dalam
+                            hitungan menit.</p>
+                    </div>
+                </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-journal-check icon"></i></div>
-              <h4>LAPORAN LENGKAP</h4>
-              <p>Sale Account Organizer dapat dengan cepat menyusun dan menyajikan data penting tentang kehidupan bisnis sehari-hari perusahaan Anda dengan salah satu dari banyak program pembuatan laporannya.</p>
-            </div>
-          </div><!-- End Service Item -->
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-journal-check icon"></i></div>
+                        <h4>LAPORAN LENGKAP</h4>
+                        <p>Sale Account Organizer dapat dengan cepat menyusun dan menyajikan data penting tentang
+                            kehidupan bisnis sehari-hari perusahaan Anda dengan salah satu dari banyak program pembuatan
+                            laporannya.</p>
+                    </div>
+                </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" >
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bar-chart icon"></i></div>
-              <h4>MANAJEMEN SAHAM MUDAH</h4>
-              <p>Lacak terus pergerakan saham perusahaan Anda sebagai bagian dari operasi sehari-hari, atau ubah sendiri catatan saham Anda.</p>
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-bar-chart icon"></i></div>
+                        <h4>MANAJEMEN SAHAM MUDAH</h4>
+                        <p>Lacak terus pergerakan saham perusahaan Anda sebagai bagian dari operasi sehari-hari, atau
+                            ubah sendiri catatan saham Anda.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
             </div>
-          </div><!-- End Service Item -->
 
         </div>
-
-      </div>
     </section><!-- End Featured Services Section -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <!-- <div class="section-header">
+            <!-- <div class="section-header">
           <h2>About Us</h2>
           <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
         </div> -->
 
-        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 
-          <!-- <div class="col-lg-7">
+                <!-- <div class="col-lg-7">
             <div class="about-img">
               <img src="assets/img/akutansi/kas-masuk.png" class="img-fluid" alt="">
             </div>
           </div> -->
 
-          <div class="col-lg-12">
-            <h3 class="pt-0 pt-lg-5">Software ERP (Enterprise Resource Planning) online untuk segala kebutuhan bisnis</h3>
+                <div class="col-lg-12">
+                    <h3 class="pt-0 pt-lg-5">Software ERP (Enterprise Resource Planning) online untuk segala kebutuhan
+                        bisnis</h3>
 
-            <!-- Tabs -->
-            <ul class="nav nav-pills mb-6">
-              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Operasional keuangan</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Manajemen inventori & gudang</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Perencanaan & analisa keuangan</a></li>
-            </ul><!-- End Tabs -->
+                    <!-- Tabs -->
+                    <ul class="nav nav-pills mb-6">
+                        <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Operasional keuangan</a>
+                        </li>
+                        <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Manajemen inventori & gudang</a>
+                        </li>
+                        <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Perencanaan & analisa
+                                keuangan</a></li>
+                    </ul><!-- End Tabs -->
 
-            <!-- Tab Content -->
-            <div class="tab-content">
+                    <!-- Tab Content -->
+                    <div class="tab-content">
 
-              <div class="tab-pane fade show active" id="tab1">
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Optimalkan operasi untuk tingkatkan profit</h4>
+                        <div class="tab-pane fade show active" id="tab1">
+                            <div class="d-flex align-items-center mt-4">
+                                <i class="bi bi-check2"></i>
+                                <h4>Optimalkan operasi untuk tingkatkan profit</h4>
+                            </div>
+                            <p>Kelola arus kas, invoice, dan pengeluaran lebih mudah untuk pastikan pembayaran tepat
+                                waktu dan buat anggaran ideal.</p>
+                            <!-- <img src="assets/img/akutansi/kas-masuk.png" > -->
+                        </div><!-- End Tab 1 Content -->
+
+                        <div class="tab-pane fade show" id="tab2">
+                            <div class="d-flex align-items-center mt-4">
+                                <i class="bi bi-check2"></i>
+                                <h4>Rancang strategi terbaik untuk efisiensi gudang</h4>
+                            </div>
+                            <p>Cegah stok berlebih dan rencanakan pengadaan barang yang paling hemat biaya dengan
+                                pemantauan kondisi stok setiap saat.</p>
+                            <!-- <img src="assets/img/akutansi/kas-masuk.png" > -->
+                        </div><!-- End Tab 2 Content -->
+
+                        <div class="tab-pane fade show" id="tab3">
+                            <div class="d-flex align-items-center mt-4">
+                                <i class="bi bi-check2"></i>
+                                <h4>Insight berharga untuk optimalkan strategi keuangan</h4>
+                            </div>
+                            <p>Pahami kondisi bisnis dengan mudah melalui beragam fitur yang memudahkan analisa laporan
+                                keuangan.</p>
+                            <!-- <img src="assets/img/akutansi/kas-masuk.png" > -->
+                        </div><!-- End Tab 3 Content -->
+
+                    </div>
+
                 </div>
-                <p>Kelola arus kas, invoice, dan pengeluaran lebih mudah untuk pastikan pembayaran tepat waktu dan buat anggaran ideal.</p>
-                  <!-- <img src="assets/img/akutansi/kas-masuk.png" > -->
-              </div><!-- End Tab 1 Content -->
-
-              <div class="tab-pane fade show" id="tab2">
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Rancang strategi terbaik untuk efisiensi gudang</h4>
-                </div>
-                <p>Cegah stok berlebih dan rencanakan pengadaan barang yang paling hemat biaya dengan pemantauan kondisi stok setiap saat.</p>
-                <!-- <img src="assets/img/akutansi/kas-masuk.png" > -->
-              </div><!-- End Tab 2 Content -->
-
-              <div class="tab-pane fade show" id="tab3">
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Insight berharga untuk optimalkan strategi keuangan</h4>
-                </div>
-                <p>Pahami kondisi bisnis dengan mudah melalui beragam fitur yang memudahkan analisa laporan keuangan.</p>
-                <!-- <img src="assets/img/akutansi/kas-masuk.png" > -->
-              </div><!-- End Tab 3 Content -->
 
             </div>
 
-          </div>
-
         </div>
-
-      </div>
     </section><!-- End About Section -->
 
-   
+
 
     <!-- ======= Call To Action Section ======= -->
     <!-- <section id="cta" class="cta">
@@ -256,7 +300,7 @@
     </section> -->
     <!-- End On Focus Section -->
 
-    
+
     <!-- ======= Services Section ======= -->
     <!-- <section id="services" class="services">
       <div class="container" data-aos="fade-up">
@@ -563,100 +607,125 @@
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
-      <div class="container-fluid" data-aos="fade-up">
+        <div class="container-fluid" data-aos="fade-up">
 
-        <div class="row gy-4">
+            <div class="row gy-4">
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                <div
+                    class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
-            <div class="content px-xl-5">
-              <h3>Frequently Asked Questions<strong>(FAQ)</strong></h3>
-              <!-- <p>
+                    <div class="content px-xl-5">
+                        <h3>Frequently Asked Questions<strong>(FAQ)</strong></h3>
+                        <!-- <p>
               <strong>SAO itu Sofware apa sih?</strong> SAO (Sale Account Organizer) adalah perangkat lunak manajemen bisnis yang akan membantu Anda menjalankan setiap aspek bisnis Anda. Dari mengelola persediaan hingga menganalisis data, memproses penjualan, dan mengelola data klien, bersama dengan alat akuntansi dan pencatatan yang mudah. SAO akan membantu Anda mengelola setiap aspek jika bisnis Anda dari bawah ke atas
               </p> -->
+                    </div>
+
+                    <div class="accordion accordion-flush px-xl-5" id="faqlist">
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-1">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Apa itu SAO (Sale Account Organizer)?
+                                </button>
+                            </h3>
+                            <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    SAO (Sale Account Organizer) adalah perangkat lunak manajemen bisnis yang dirancang
+                                    untuk membantu pengusaha mengelola berbagai aspek bisnis mereka. Dari manajemen
+                                    persediaan hingga analisis data, pemrosesan penjualan, pengelolaan informasi klien,
+                                    hingga alat akuntansi dan pencatatan yang efisien, SAO memberikan solusi lengkap
+                                    untuk mengelola bisnis dari bawah ke atas.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-2">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Apa keunggulan utama SAO dalam menjalankan bisnis?
+                                </button>
+                            </h3>
+                            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Salah satu keunggulan utama SAO adalah kemampuannya dalam mengintegrasikan berbagai
+                                    fungsi bisnis menjadi satu platform. Ini memungkinkan Anda untuk dengan mudah
+                                    mengontrol persediaan, menghasilkan laporan analisis yang mendalam, serta mengelola
+                                    transaksi penjualan dan keuangan dengan efisien. SAO juga menawarkan alat pelacakan
+                                    klien yang membantu Anda memahami kebutuhan dan preferensi pelanggan.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-3">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Apa manfaat penggunaan SAO bagi pemilik bisnis?
+                                </button>
+                            </h3>
+                            <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Penggunaan SAO memberikan beberapa manfaat bagi pemilik bisnis. Dengan SAO, Anda
+                                    dapat menghemat waktu dan usaha dalam mengelola inventaris, mengelola data
+                                    pelanggan, serta mengawasi kinerja bisnis Anda melalui analisis data yang mudah
+                                    diakses. Selain itu, alat akuntansi yang terintegrasi membantu Anda melacak keuangan
+                                    dengan lebih baik.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-4">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Apakah SAO cocok untuk jenis bisnis apa saja?
+                                </button>
+                            </h3>
+                            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Ya, SAO dirancang untuk dapat diadaptasi ke berbagai jenis bisnis, baik itu ritel,
+                                    layanan, atau bahkan bisnis online. Dengan fitur yang dapat disesuaikan, SAO dapat
+                                    digunakan oleh berbagai industri, termasuk restoran, toko retail, agen travel, dan
+                                    lainnya.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-5">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Apakah SAO dapat membantu meningkatkan efisiensi operasional?
+                                </button>
+                            </h3>
+                            <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Tentu, SAO dapat signifikan meningkatkan efisiensi operasional bisnis Anda. Dengan
+                                    memudahkan manajemen persediaan, transaksi penjualan yang lancar, serta akses cepat
+                                    ke informasi kinerja bisnis, Anda dapat mengambil keputusan yang lebih baik dan
+                                    mengoptimalkan operasional bisnis Anda secara keseluruhan.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+                    style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
             </div>
 
-            <div class="accordion accordion-flush px-xl-5" id="faqlist">
-
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Apa itu SAO (Sale Account Organizer)?
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  SAO (Sale Account Organizer) adalah perangkat lunak manajemen bisnis yang dirancang untuk membantu pengusaha mengelola berbagai aspek bisnis mereka. Dari manajemen persediaan hingga analisis data, pemrosesan penjualan, pengelolaan informasi klien, hingga alat akuntansi dan pencatatan yang efisien, SAO memberikan solusi lengkap untuk mengelola bisnis dari bawah ke atas.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Apa keunggulan utama SAO dalam menjalankan bisnis?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  Salah satu keunggulan utama SAO adalah kemampuannya dalam mengintegrasikan berbagai fungsi bisnis menjadi satu platform. Ini memungkinkan Anda untuk dengan mudah mengontrol persediaan, menghasilkan laporan analisis yang mendalam, serta mengelola transaksi penjualan dan keuangan dengan efisien. SAO juga menawarkan alat pelacakan klien yang membantu Anda memahami kebutuhan dan preferensi pelanggan.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Apa manfaat penggunaan SAO bagi pemilik bisnis?
-                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  Penggunaan SAO memberikan beberapa manfaat bagi pemilik bisnis. Dengan SAO, Anda dapat menghemat waktu dan usaha dalam mengelola inventaris, mengelola data pelanggan, serta mengawasi kinerja bisnis Anda melalui analisis data yang mudah diakses. Selain itu, alat akuntansi yang terintegrasi membantu Anda melacak keuangan dengan lebih baik.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Apakah SAO cocok untuk jenis bisnis apa saja?
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Ya, SAO dirancang untuk dapat diadaptasi ke berbagai jenis bisnis, baik itu ritel, layanan, atau bahkan bisnis online. Dengan fitur yang dapat disesuaikan, SAO dapat digunakan oleh berbagai industri, termasuk restoran, toko retail, agen travel, dan lainnya.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Apakah SAO dapat membantu meningkatkan efisiensi operasional?
-                  </button>
-                </h3>
-                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  Tentu, SAO dapat signifikan meningkatkan efisiensi operasional bisnis Anda. Dengan memudahkan manajemen persediaan, transaksi penjualan yang lancar, serta akses cepat ke informasi kinerja bisnis, Anda dapat mengambil keputusan yang lebih baik dan mengoptimalkan operasional bisnis Anda secara keseluruhan.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
         </div>
-
-      </div>
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -930,12 +999,12 @@
     </section> -->
     <!-- End Recent Blog Posts Section -->
 
-    
 
-  </main><!-- End #main -->
 
-  @include('footer')
-  @include('script')
+</main><!-- End #main -->
+
+@include('footer')
+@include('script')
 </body>
 
 </html>
