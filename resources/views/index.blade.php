@@ -199,8 +199,7 @@
                         </li>
                         <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Manajemen inventori & gudang</a>
                         </li>
-                        <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Perencanaan & analisa
-                                keuangan</a></li>
+                        <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Perencanaan & analisa keuangan</a></li>
                     </ul><!-- End Tabs -->
 
                     <!-- Tab Content -->

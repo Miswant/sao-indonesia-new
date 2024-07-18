@@ -74,7 +74,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#clients">Clients</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#pricing">Contoh Module</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
                     {{-- <li class="nav-item"><a class="nav-link scrollto" href="#team">Team</a></li>
                             <li class="dropdown"><a href="#"><span>Drop Down</span> <i
                                         class="bi bi-chevron-down"></i></a>
@@ -151,7 +151,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-start text-center position-relative"
             data-aos="zoom-out">
             <div class="d-flex flex-row-reverse">
-                <img src="assets/img/hero-carousel/Sales-Account-Organizer.png"
+                <img src="assets/img/hero-carousel/smartmockups_po.png"
                     class="img-fluid img-fluid-desktop animated" style="max-width: 50%; height: auto;">
                 <div>
                     <h2></h2>
@@ -408,9 +408,9 @@
 
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <h2>FITUR SAO (Sales Account Organizer)</h2>
+                            <h2>FITUR SAO (Sale Account Organizer)</h2>
                         </div>
-                        {{-- <h3 class="pt-0 pt-lg-5">FITUR SAO (Sales Account Organizer)</h3> --}}
+                        {{-- <h3 class="pt-0 pt-lg-5">FITUR SAO (Sale Account Organizer)</h3> --}}
 
                         <!-- Tabs -->
                         <ul class="nav nav-pills mb-6">
@@ -542,43 +542,50 @@
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
                             <h4>Master Supplier</h4>
                         </a>
-                    </li><!-- End Tab 2 Nav -->
+                    </li>
+                    <!-- End Tab 2 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                            <h4>Region Master</h4>
+                            <h4>Purchase Order</h4>
                         </a>
-                    </li><!-- End Tab 3 Nav -->
+                    </li>
+                    <!-- End Tab 3 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                            <h4>Master Bank</h4>
+                            <h4>Sales Order</h4>
                         </a>
-                    </li><!-- End Tab 4 Nav -->
+                    </li>
+                    <!-- End Tab 4 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-                            <h4>Purchase Invoice</h4>
+                            <h4>Bank Masuk</h4>
                         </a>
-                    </li><!-- End Tab 5 Nav -->
+                    </li>
+                    <!-- End Tab 5 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
-                            <h4>Sales Invoice</h4>
+                            <h4>Laporan Keuangan</h4>
                         </a>
-                    </li><!-- End Tab 6 Nav -->
+                    </li>
+                    <!-- End Tab 6 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
-                            <h4>Purchase Order</h4>
+                            <h4>Menu-menu lainya</h4>
                         </a>
-                    </li><!-- End Tab 7 Nav -->
+                    </li>
+                    <!-- End Tab 7 Nav -->
 
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                    <!-- <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-8">
                             <h4>Stock Opname</h4>
                         </a>
-                    </li><!-- End Tab 8 Nav -->
+                    </li> -->
+                    <!-- End Tab 8 Nav -->
 
                 </ul>
 
@@ -594,16 +601,6 @@
                                     "admin".
                                     Isikan nilai User Code dengan `admin` dan Password dengan `admin` juga.
                                 </p>
-                                <!-- <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
                                 data-aos-delay="200">
@@ -620,19 +617,9 @@
                                     Digunakan untuk mencatat semua supplier yang berhubungan dengan perusahaan yang akan
                                     digunakan pada saat pengumpulan data transaksi pembelian.
                                 </p>
-                                <!-- <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/master_supplier.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/module/smartmockups_ms_supplier.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div><!-- End Tab Content 2 -->
@@ -640,24 +627,13 @@
                     <div class="tab-pane" id="tab-3">
                         <div class="row gy-4">
                             <div class="col-lg-6 order-2 order-lg-1">
-                                <h3>Region Master</h3>
+                                <h3>Purchase Order</h3>
                                 <p>
-                                    Digunakan untuk merekam area yang berhubungan dengan pelanggan yang akan digunakan
-                                    pada saat
-                                    pengambilan data pelanggan.
+                                Purchase Order (PO) digunakan untuk mengelola proses pembelian barang dan jasa dari pemasok (vendor). Modul ini mencakup berbagai fungsi yang membantu perusahaan mengotomatisasi dan mengelola alur kerja pembelian dengan lebih efisien.
                                 </p>
-                                <!-- <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-              </ul>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/master_wilayah.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/module/smartmockups_po.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div><!-- End Tab Content 3 -->
@@ -665,24 +641,13 @@
                     <div class="tab-pane" id="tab-4">
                         <div class="row gy-4">
                             <div class="col-lg-6 order-2 order-lg-1">
-                                <h3>Master Bank</h3>
+                                <h3>Sales Order</h3>
                                 <p>
-                                    Digunakan untuk mencatat bank yang akan digunakan perusahaan untuk melakukan
-                                    transaksi
-                                    pembelian dan penjualan.
+                                Sales Order (SO) digunakan untuk mengelola proses penjualan barang dan jasa kepada pelanggan. Modul ini membantu perusahaan mengotomatisasi dan mengelola alur kerja penjualan dengan lebih efisien dan efektif
                                 </p>
-                                <!-- <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/master_bank.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/module/smartmockups_so.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div><!-- End Tab Content 4 -->
@@ -690,22 +655,13 @@
                     <div class="tab-pane" id="tab-5">
                         <div class="row gy-4">
                             <div class="col-lg-6 order-2 order-lg-1">
-                                <h3>Purchase Invoice</h3>
+                                <h3>Bank Masuk</h3>
                                 <p>
-                                    Digunakan untuk membuat invoice/faktur pembelian barang dari data penerimaan barang.
+                                "Bank Masuk" atau "Bank Receipt" digunakan untuk mengelola penerimaan uang dari berbagai sumber ke dalam akun bank perusahaan. Modul ini membantu perusahaan mengotomatisasi dan mengelola alur kerja penerimaan kas dengan lebih efisien dan akurat.
                                 </p>
-                                <!-- <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/invoice_pembelian.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/module/smartmockups_bank_masuk.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div><!-- End Tab Content 5 -->
@@ -713,35 +669,23 @@
                     <div class="tab-pane" id="tab-6">
                         <div class="row gy-4">
                             <div class="col-lg-6 order-2 order-lg-1">
-                                <h3>Sales Invoice</h3>
+                                <h3>Laporan Keuangan</h3>
                                 <p>
-                                    Digunakan untuk membuat invoice/faktur penjualan barang dari data delivery order.
-                                    Ketika
-                                    terjadi penjualan, program secara otomatis akan menghasilkan laporan penjualan yang
-                                    diambil
-                                    dari transaksi penjualan.
+                                "Laporan Keuangan" digunakan untuk mengelola dan menganalisis data keuangan perusahaan. Modul ini menyediakan berbagai jenis laporan keuangan yang membantu manajemen dalam pengambilan keputusan, pelaporan kepada pemangku kepentingan, dan pemenuhan kewajiban hukum dan regulasi.
                                 </p>
-                                <!-- <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/invoice_penjualan.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/module/smartmockups_report_keuangan.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div><!-- End Tab Content 6 -->
+                
                     <div class="tab-pane" id="tab-7">
                         <div class="row gy-4">
                             <div class="col-lg-6 order-2 order-lg-1">
-                                <h3>Purchase Order</h3>
+                                <h3>Menu-menu lainya</h3>
                                 <p>
-                                    Digunakan untuk mencatat pembelian barang. Pada saat transaksi pembelian barang.
+                                   Masih Banyak menu lainya, sesuai Custome dari permintaan Customer.
                                 </p>
                                 <!-- <p class="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -754,35 +698,7 @@
               </ul> -->
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/pembelian.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="tab-8">
-                        <div class="row gy-4">
-                            <div class="col-lg-6 order-2 order-lg-1">
-                                <h3>Stock Opname</h3>
-                                <p>
-                                    Digunakan untuk melakukan stock opname barang. Demikian juga dengan transaksi barang
-                                    lainnya. Transaksi stock opname dapat melakukan whitening atau menyesuaikan stock
-                                    dengan
-                                    lebih dari satu jenis barang. Biasanya transaksi ini dilakukan pada awal penggunaan
-                                    program
-                                    atau pada saat tutup buku pada akhir tahun perusahaan.
-                                </p>
-                                <!-- <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul> -->
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/module/stock_opname.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/module/smartmockups_absen.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -938,12 +854,12 @@
 
                 <div class="row">
                     <div class="col-lg-9 text-center text-lg-start">
-                        <h3>Get Involved</h3>
+                        <!-- <h3>Get Involved</h3>
                         <p> Join us in making a difference. Contribute to meaningful projects and be part of our
                             community. Together, we can achieve more and create a better future.</p>
                     </div>
                     <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Get Started</a>
+                        <a class="cta-btn align-middle" href="#">Get Started</a> -->
                     </div>
                 </div>
 
@@ -951,7 +867,7 @@
         </section><!-- End Cta Section -->
 
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
+        <!-- <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -1091,7 +1007,8 @@
                 </div>
 
             </div>
-        </section><!-- End Portfolio Section -->
+        </section> -->
+        <!-- End Portfolio Section -->
 
         <!-- ======= Team Section ======= -->
         {{-- <section id="team" class="team section-bg">
@@ -1417,7 +1334,7 @@
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>+62 21 21397171</p>
+                                <p><strong>WhatsApp</strong> (sales) <a href="https://wa.me/6281274500089">081274500089</a><br></p>
                             </div>
 
                             <iframe
@@ -1494,7 +1411,7 @@
                             Jl. Kartini Raya No.16, RT.13/RW.5, Ps. Baru, <br>
                             Kecamatan Sawah Besar, Kota Jakarta Pusat, <br>
                             Daerah Khusus Ibukota Jakarta 10710 <br><br>
-                            <strong>Phone:</strong> +62 21 21397171<br>
+                            <strong>WhatsApp:</strong> (sales) <a href="https://wa.me/6281274500089">081274500089</a><br>
                             <strong>Email:</strong> 1tech@satu-tech.com<br>
                         </p>
                     </div>
@@ -1529,9 +1446,9 @@
                                     class="bx bxl-instagram"></i></a>
                             <a href="http://www.satu-tech.com/" class="twitter"><i
                                     class="bx bxl-internet-explorer"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                             <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
                         </div>
                     </div>
 
