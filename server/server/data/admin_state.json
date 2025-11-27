@@ -1,0 +1,14 @@
+{
+  "failedAttempts": {
+    "::ffff:127.0.0.1": {
+      "count": 0,
+      "lastFailedAt": 0
+    }
+  },
+  "sessions": {
+    "s_crzn8t3oe76_1764222733516": {
+      "created": 1764222733516,
+      "expires": 1764224533516
+    }
+  }
+}
