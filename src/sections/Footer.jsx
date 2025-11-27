@@ -100,7 +100,7 @@ const Footer = () => {
                     mb: 3,
                   }}
                 >
-                  Template Dashboard Admin yang ramah pengembang & sangat dapat dikustomisasi.
+                  {/* Template Dashboard Admin yang ramah pengembang & sangat dapat dikustomisasi. */}
                 </Typography>
               </Box>
               
