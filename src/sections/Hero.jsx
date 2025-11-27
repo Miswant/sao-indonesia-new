@@ -8,8 +8,20 @@ import {
   useTheme
 } from '@mui/material';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
-import dashboardDemo from '../assets/dashboard-demo.png';
 import InteractiveDashboardCard from '../components/InteractiveDashboardCard';
+
+// --- TAMBAHKAN BARIS-BARIS INI ---
+import BTS from '../assets/BTS.jpeg';
+import CLOVER from '../assets/CLOVER.jpeg';
+import GGS from '../assets/GGS.jpeg';
+import MAP from '../assets/MAP.jpeg';
+import Neutron from '../assets/Neutron.jpeg';
+import SAO from '../assets/SAO.jpeg';
+import SAS from '../assets/SAS.jpeg';
+import SDA from '../assets/SDA.jpeg';
+import SGP from '../assets/SGP.jpeg';
+import SPK from '../assets/SPK.jpeg';
+// ---------------------------------
 
 const Hero = () => {
   const theme = useTheme();
@@ -158,16 +170,16 @@ const Hero = () => {
               alignItems="center"
               flexWrap="wrap"
             >
-              <Box component="img" src="/src/assets/BTS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/CLOVER.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/GGS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/MAP.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/Neutron.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/SAO.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/SAS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/SDA.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/SGP.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/SPK.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={BTS} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={CLOVER} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={GGS} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={MAP} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={Neutron} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={SAO} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={SAS} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={SDA} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={SGP} sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src={SPK} sx={{ height: 40, opacity: 0.7 }} />
             </Stack>
           </Box>
         </Box>
