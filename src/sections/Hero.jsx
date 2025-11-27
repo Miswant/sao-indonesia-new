@@ -158,16 +158,16 @@ const Hero = () => {
               alignItems="center"
               flexWrap="wrap"
             >
-              <Box component="img" src="/src/assets/PartnerCompenies/BTS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/CLOVER.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/GGS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/MAP.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/Neutron.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/SAO.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/SAS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/SDA.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/SGP.jpeg" sx={{ height: 40, opacity: 0.7 }} />
-              <Box component="img" src="/src/assets/PartnerCompenies/SPK.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/BTS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/CLOVER.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/GGS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/MAP.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/Neutron.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/SAO.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/SAS.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/SDA.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/SGP.jpeg" sx={{ height: 40, opacity: 0.7 }} />
+              <Box component="img" src="/src/assets/SPK.jpeg" sx={{ height: 40, opacity: 0.7 }} />
             </Stack>
           </Box>
         </Box>
