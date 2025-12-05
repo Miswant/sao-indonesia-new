@@ -75,7 +75,7 @@ const Footer = () => {
       sx={{
         background: '#0b0f19',
         color: 'rgba(255,255,255,0.8)',
-        pt: { xs: 8, md: 12 },
+        pt: { xs: 8, md: 4 },
         pb: 4,
 
       }}
@@ -89,7 +89,7 @@ const Footer = () => {
 
             <Stack spacing={3}>
               <Box>
-                <Typography variant="h5" sx={{ fontWeight: 700, color: '#fff', mb: 2 }}>
+                <Typography variant="h5" sx={{ fontWeight: 700, color: '#fff', mb: 2}}>
                   <img src={LogoSao} alt="Logo Sao" style={{ height: 60 }} />
                 </Typography>
                 <Typography
@@ -106,7 +106,7 @@ const Footer = () => {
               
               {/* Newsletter */}
               <Box>
-                <Typography variant="h6" sx={{ fontWeight: 600, color: '#fff', mb: 2 }}>
+                {/* <Typography variant="h6" sx={{ fontWeight: 600, color: '#fff', mb: 2 }}>
                   Berlangganan newsletter
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1}>
@@ -133,11 +133,11 @@ const Footer = () => {
                   >
                     Berlangganan
                   </Button>
-                </Stack>
+                </Stack> */}
               </Box>
               
               {/* Social Links */}
-              <Stack direction="row" spacing={1}>
+              {/* <Stack direction="row" spacing={1}>
                 {socialLinks.map((social, index) => (
                   <IconButton
                     key={index}
@@ -157,7 +157,7 @@ const Footer = () => {
                     {social.icon}
                   </IconButton>
                 ))}
-              </Stack>
+              </Stack> */}
             </Stack>
           </Grid>
 

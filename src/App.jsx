@@ -1,12 +1,10 @@
+// App.jsx
 import React from 'react';
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import theme from './theme';
 
-// Components
 import Navbar from './components/Navbar';
-
-// Sections
 import Hero from './sections/Hero';
 import Features from './sections/Features';
 import Testimonials from './sections/Testimonials';
@@ -19,14 +17,46 @@ import Statistics from './sections/Statistics';
 import OurUniqueTraits from './sections/OurUniqueTraits';
 import TrustBadges from './sections/TrustBadges';
 import Admin from './sections/Admin';
+import NewPageContact from './sections/NewPageContact';
 
-function App() {
+ 
+
+function ScrollToHash() {
+  const location = useLocation();
+  React.useEffect(() => {
+    if (!location.hash) return;
+
+    const id = location.hash.replace('#', '');
+    const el = document.getElementById(id);
+
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [location]);
+
+  return null;
+}
+
+function AppContent() {
+  const location = useLocation();
+  const hideLayout = location.pathname === "/admin";
+
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <BrowserRouter>
-        <Box sx={{ minHeight: '100vh', pt: { xs: 10, md: 12 }, backgroundColor: theme.palette.background.default }}>
-          <Navbar />
+    <>
+      <ScrollToHash />
+
+      <Box
+        sx={{
+          minHeight: '100vh',
+          // pt: { xs: 10, md: 12 },
+          backgroundColor: theme.palette.background.default,
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <Navbar />
+
+        <Box sx={{ flex: 1 }}>
           <Routes>
             <Route
               path="/"
@@ -38,15 +68,32 @@ function App() {
                   <Statistics />
                   <FAQ />
                   <TrustBadges />
-                  <Contact />
-                  <Footer />
-                  <FloatingActions />
+                  {/* <Contact /> */}
                 </>
               }
             />
+            <Route path="/kontak" element={<NewPageContact />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>
         </Box>
+
+       {!hideLayout && (
+          <>
+            <Footer />
+            <FloatingActions />
+          </>
+        )}
+      </Box>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <AppContent />
       </BrowserRouter>
     </ThemeProvider>
   );
