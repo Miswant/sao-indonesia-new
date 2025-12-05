@@ -117,7 +117,8 @@ export default function Admin() {
   const pageItems = filtered.slice(page * pageSize, (page + 1) * pageSize);
 
   return (
-    <Container maxWidth="lg" sx={{ py: 6 }}>
+  
+    <Container maxWidth="lg" sx={{ py: 12 }}>
       <Paper sx={{ p: 3 }}>
         <Stack spacing={2}>
           <Typography variant="h5">Admin - Submissions</Typography>

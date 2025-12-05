@@ -19,9 +19,10 @@ import TrustBadges from './sections/TrustBadges';
 import Admin from './sections/Admin';
 import NewPageContact from './sections/NewPageContact';
 
+ 
+
 function ScrollToHash() {
   const location = useLocation();
-
   React.useEffect(() => {
     if (!location.hash) return;
 
@@ -37,6 +38,9 @@ function ScrollToHash() {
 }
 
 function AppContent() {
+  const location = useLocation();
+  const hideLayout = location.pathname === "/admin";
+
   return (
     <>
       <ScrollToHash />
@@ -73,8 +77,12 @@ function AppContent() {
           </Routes>
         </Box>
 
-        <Footer />
-        <FloatingActions />
+       {!hideLayout && (
+          <>
+            <Footer />
+            <FloatingActions />
+          </>
+        )}
       </Box>
     </>
   );
