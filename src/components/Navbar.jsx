@@ -17,6 +17,10 @@ import {
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import LogoSao from '../assets/satu-andalan-optima.png';
 
+import { Link as RouterLink } from 'react-router-dom'; 
+
+
+
 const Navbar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -33,12 +37,10 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { text: 'Beranda', href: '/' },
-    { text: 'Fitur', href: '#features' },
-    // { text: 'Tim', href: '#team' },
-    // { text: 'Harga', href: '#pricing' },
-    { text: 'FAQ', href: '#faq' },
-    { text: 'Kontak', href: '#contact' },
+    { text: 'Beranda', to: '/' },
+    { text: 'Fitur',   to: '/#features' },
+    { text: 'FAQ',     to: '/#faq' },
+    { text: 'Kontak',  to: '/kontak' },
   ];
 
   const drawer = (
@@ -53,7 +55,13 @@ const Navbar = () => {
       </Box>
       <List>
         {menuItems.map((item) => (
-          <ListItem key={item.text} component="a" href={item.href}>
+          <ListItem
+            key={item.text}
+            button
+            component={RouterLink}
+            to={item.to}
+            onClick={handleDrawerToggle}
+          >
             <ListItemText primary={item.text} />
           </ListItem>
         ))}
@@ -76,16 +84,16 @@ const Navbar = () => {
           borderRadius: '5px',
           boxShadow: '0px 1px 8px 0px rgba(76, 78, 100, 0.12)',
           py: 0.5,
-  
         }}
       >
         <Container maxWidth="xl" sx={{ px: { xs: 2, md: 4 } }}>
           <Toolbar disableGutters>
+            {/* Logo → go to home */}
             <Typography
               variant="h6"
               noWrap
-              component="a"
-              href="#"
+              component={RouterLink}
+              to="/"
               sx={{
                 mr: 2,
                 display: 'flex',
@@ -115,7 +123,8 @@ const Navbar = () => {
                 {menuItems.map((item) => (
                   <Button
                     key={item.text}
-                    href={item.href}
+                    component={RouterLink}
+                    to={item.to}
                     sx={{ 
                       mx: 1, 
                       color: theme.palette.text.primary,
@@ -136,21 +145,6 @@ const Navbar = () => {
 
             {!isMobile && (
               <Box sx={{ flexGrow: 0 }}>
-                {/* <Button 
-                  variant="outlined" 
-                  sx={{ 
-                    mr: 1, 
-                    borderColor: '#9155FD', 
-                    color: '#9155FD',
-                    textTransform: 'none',
-                    '&:hover': {
-                      borderColor: '#9155FD',
-                      backgroundColor: 'rgba(145, 85, 253, 0.1)',
-                    }
-                  }}
-                >
-                  Admin
-                </Button> */}
                 <Button 
                   variant="contained" 
                   onClick={handleWhatsApp}
