@@ -18,6 +18,7 @@ import OurUniqueTraits from './sections/OurUniqueTraits';
 import TrustBadges from './sections/TrustBadges';
 import Admin from './sections/Admin';
 import NewPageContact from './sections/NewPageContact';
+import PageNotFound from './sections/PageNotFound';
 
  
 
@@ -74,6 +75,7 @@ function AppContent() {
             />
             <Route path="/kontak" element={<NewPageContact />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Box>
 
