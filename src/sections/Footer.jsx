@@ -212,56 +212,60 @@ const Footer = () => {
           </Grid>
 
           {/* Contact Info */}
-          <Grid item xs={12} md={3}>
-            <Stack spacing={3} flex={1}>
-              <Typography variant="h6" sx={{ fontWeight: 600, color: '#fff' }}>
-                Kontak
-              </Typography>
-              
-              {contactInfo.map((contact, index) => (
-                <Stack key={index} direction="row" spacing={2} alignItems="flex-start">
-                  <Box
-                    sx={{
-                      color: theme.palette.primary.main,
-                      mt: 0.5,
-                    }}
+          <Grid item xs={12} sm={4}>
+                <Stack spacing={2}>
+                  <Typography
+                    variant="h6"
+                    sx={{ fontWeight: 600, color: '#fff' }}
                   >
-                    {contact.icon}
-                  </Box>
-                  <Box >
-                    {/* <Typography variant="body2" sx={{ fontWeight: 600, color: '#fff', mb: 0.5 }}>
-                      {contact.label}
-                    </Typography> */}
-                    {contact.href ? (
-                      <Link
-                        href={contact.href}
-                        underline="none"
+                    Kontak
+                  </Typography>
+
+                  {contactInfo.map((contact, index) => (
+                    <Stack
+                      key={index}
+                      direction="row"
+                      spacing={1.5}
+                      alignItems="center"
+                    >
+                      <Box
                         sx={{
-                          color: 'rgba(255,255,255,0.7)',
-                          fontSize: '0.875rem',
-                          '&:hover': {
-                            color: '#fff',
-                          },
+                          color: theme.palette.primary.main,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
                         }}
                       >
-                        {contact.value}
-                      </Link>
-                    ) : (
-                      <Typography
-                        variant="body2"
-                        sx={{
-                          color: 'rgba(255,255,255,0.7)',
-                          fontSize: '0.875rem',
-                        }}
+                        {contact.icon}
+                      </Box>
+
+                      {contact.href ? (
+                        <Link
+                          href={contact.href}
+                          underline="none"
+                          sx={{
+                            color: 'rgba(255,255,255,0.7)',
+                            fontSize: '0.875rem',
+                            '&:hover': { color: '#fff' },
+                          }}
                         >
-                        {contact.value}
-                      </Typography>
-                    )}
-                  </Box>
+                          {contact.value}
+                        </Link>
+                      ) : (
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            color: 'rgba(255,255,255,0.7)',
+                            fontSize: '0.875rem',
+                          }}
+                        >
+                          {contact.value}
+                        </Typography>
+                      )}
+                    </Stack>
+                  ))}
                 </Stack>
-              ))}
-            </Stack>
-          </Grid>
+              </Grid>
         </Grid>
 
         {/* Bottom Section */}
