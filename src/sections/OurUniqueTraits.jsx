@@ -73,6 +73,7 @@ const OurUniqueTraits = () => {
             sx={{
               fontWeight: 700,
               color: theme.palette.text.primary,
+              fontSize: { xs: '1.5rem', md: '2.125rem' },
             }}
           >
             Apa yang Membuat SAO{' '}
@@ -107,12 +108,13 @@ const OurUniqueTraits = () => {
         sx={{
             display: 'grid',
             gridTemplateColumns: {
-            md: 'repeat(3, minmax(350px, 1fr))',   
-            xs: 'repeat(2, minmax(350px, 1fr))',   
+            md: 'repeat(3, minmax(350px, 1fr))',
+            sm: 'repeat(2, minmax(280px, 1fr))',
+            xs: '1fr',
             },
             justifyContent: 'center',
         
-            gap: { xs: 3, md: 4 },
+            gap: { xs: 2, sm: 3, md: 4 },
         }}
         >
           {items.map((item, idx) => {
@@ -122,10 +124,10 @@ const OurUniqueTraits = () => {
                 key={idx}
                 sx={{
                   borderRadius: 4,
-                  p: 3,
+                  p: { xs: 2, md: 3 },
                   textAlign: 'center',
                   color: '#615d5dff',
-                  minHeight: 220,
+                  minHeight: { xs: 'auto', md: 220 },
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -143,14 +145,14 @@ const OurUniqueTraits = () => {
                     // width: 64,
                     // height: 64,
                     // borderRadius: '24px',
-                    mb: 2.5,
+                    mb: { xs: 1.5, md: 2.5 },
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                    
                   }}
                 >
-                  <Icon sx={{ fontSize: 34, color: '#9f64daff' }} />
+                  <Icon sx={{ fontSize: { xs: 28, md: 34 }, color: '#9f64daff' }} />
                 </Box>
 
                 {/* Title */}
