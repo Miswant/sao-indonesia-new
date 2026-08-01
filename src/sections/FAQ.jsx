@@ -14,7 +14,6 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { alpha } from '@mui/material/styles';
 
-import boySitting from '../assets/boy-sitting-with-laptop.png';
 
 const items = [
   {

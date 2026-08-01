@@ -37,8 +37,8 @@ async function ensureDataFile() {
   try {
     await fs.mkdir(DATA_DIR, { recursive: true });
     await fs.access(DATA_FILE);
-  } catch (err) {
-    await fs.writeFile(DATA_FILE, '[]', 'utf8');
+  } catch {
+    // ignore missing file
   }
 }
 
@@ -54,7 +54,7 @@ async function loadAdminState() {
       // restore sessions map
       Object.entries(j.sessions).forEach(([k, v]) => sessions.set(k, v));
     }
-  } catch (err) {
+  } catch {
     // ignore missing file
   }
 }
@@ -66,8 +66,8 @@ async function saveAdminState() {
       sessions: Object.fromEntries(sessions.entries()),
     };
     await fs.writeFile(ADMIN_STATE_FILE, JSON.stringify(obj, null, 2), 'utf8');
-  } catch (err) {
-    console.error('Failed to save admin state', err);
+  } catch (error) {
+    console.error('Failed to save admin state', error);
   }
 }
 
@@ -285,7 +285,7 @@ app.get('/admin', async (req, res) => {
         }
       }
 
-      function escapeHtml(s){ if(!s) return ''; return s.replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":"&#39;"})[c]); }
+      function escapeHtml(s){ if(!s) return ''; return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]); }
 
       btn.addEventListener('click', async ()=>{
         msg.textContent='';
@@ -297,7 +297,7 @@ app.get('/admin', async (req, res) => {
           if(!r.ok){ msg.textContent = j.error || 'Login failed'; return; }
           loginDiv.classList.add('hidden'); adminDiv.classList.remove('hidden');
           await showSubmissions();
-        }catch(err){ msg.textContent='Network error'; }
+        }catch{ msg.textContent='Network error'; }
       });
 
       logout.addEventListener('click', ()=>{ document.cookie='admin_session=; Max-Age=0; Path=/'; loginDiv.classList.remove('hidden'); adminDiv.classList.add('hidden'); });

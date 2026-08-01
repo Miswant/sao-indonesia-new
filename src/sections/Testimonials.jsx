@@ -14,7 +14,6 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-import { motion } from 'framer-motion';
 
 const Testimonials = () => {
   const theme = useTheme();

@@ -1,33 +1,23 @@
 // src/components/FloatingActions.jsx
-import React, { useEffect, useState } from 'react';
-import { Box, Button, IconButton, Stack } from '@mui/material';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import React, { useEffect } from 'react';
+import { Box, Button, Stack } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const FloatingActions = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
     useEffect(() => {
     const handleScroll = () => {
-        const scrollY =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop ||
         0;
-
-        setShowScrollTop(scrollY > 150);
-        
     };
+
 
     window.addEventListener('scroll', handleScroll);
     handleScroll(); 
 
     return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-  const handleScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   const handleWhatsApp = () => {
     const phone = '+6285719033486';
