@@ -62,13 +62,6 @@ const Footer = () => {
     },
   ];
 
-  const socialLinks = [
-    { icon: <GitHubIcon />, href: '#' },
-    { icon: <FacebookIcon />, href: '#' },
-    { icon: <TwitterIcon />, href: '#' },
-    { icon: <LinkedInIcon />, href: '#' },
-  ];
-
   return (
     <Box
       component="footer"

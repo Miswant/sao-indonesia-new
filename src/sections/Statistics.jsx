@@ -5,7 +5,6 @@ import {
   Container,
   Stack,
   Typography,
-  useTheme,
 } from '@mui/material';
 
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -41,7 +40,6 @@ const items = [
 ];
 
 const Statistics = () => {
-  const theme = useTheme();
 
   return (
     <Box

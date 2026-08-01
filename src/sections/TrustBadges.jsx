@@ -6,14 +6,12 @@ import {
   Stack,
   Typography,
   Button,
-  useTheme,
 } from '@mui/material';
 
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import demoDashboard from '../assets/dashboard-demo.png'; 
 
 const TrustBadges = () => {
-  const theme = useTheme();
 
   return (
     <Box

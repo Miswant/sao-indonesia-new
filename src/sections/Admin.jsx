@@ -59,7 +59,7 @@ export default function Admin() {
       setSnackSeverity('success');
       setSnackOpen(true);
       await loadItems();
-    } catch (err) {
+    } catch {
       setError('Network error');
       setSnackMessage('Kesalahan jaringan');
       setSnackSeverity('error');
@@ -73,7 +73,7 @@ export default function Admin() {
       if (!r.ok) throw r;
       const j = await r.json();
       setItems(j.data || []);
-    } catch (err) {
+    } catch {
       setError('Failed to load submissions');
       setSnackMessage('Gagal memuat submissions');
       setSnackSeverity('error');
@@ -220,7 +220,7 @@ export default function Admin() {
                               setSnackMessage('Pesan dihapus');
                               setSnackSeverity('success');
                               setSnackOpen(true);
-                            } catch (e) {
+                            } catch {
                               setError('Network error');
                               setSnackMessage('Kesalahan jaringan saat menghapus');
                               setSnackSeverity('error');
