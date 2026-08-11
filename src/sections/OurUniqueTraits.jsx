@@ -57,7 +57,7 @@ const OurUniqueTraits = () => {
       sx={{
         pt: { xs: 2, md: 10 },   // margin atas kecil
         pb: { xs: 8, md: 4 },  // margin bawah tetap lega
-        backgroundColor: '#F8F7FA',
+        backgroundColor: 'white',
       }}
     >
       <Container maxWidth="lg">
@@ -113,7 +113,7 @@ const OurUniqueTraits = () => {
             xs: '1fr',
             },
             justifyContent: 'center',
-        
+            backgroundColor: 'white',
             gap: { xs: 2, sm: 3, md: 4 },
         }}
         >

@@ -47,7 +47,7 @@ const Hero = () => {
           inset: 0,
           height: { xs: 520, md: 640 },
           background:
-            'radial-gradient(1200px 520px at 10% -10%, rgba(145,85,253,0.28) 0%, rgba(145,85,253,0.10) 40%, rgba(248,247,250,0) 75%), radial-gradient(1100px 520px at 100% 0%, rgba(255,160,122,0.22) 0%, rgba(255,160,122,0.06) 40%, rgba(248,247,250,0) 75%)',
+            'radial-gradient(1200px 520px at 10% -10%, rgba(145,85,253,0.28) 0%, rgba(145,85,253,0.10) 40%, rgba(248,247,250,0) 75%), radial-gradient(1100px 520px at 100% 0%, rgba(255,160,122,0.22) 0%, rgba(255,160,122,0.06) 40%, white 75%)',
           borderBottomLeftRadius: { xs: '32px', md: '48px' },
           borderBottomRightRadius: { xs: '32px', md: '48px' },
           boxShadow: '0 20px 40px rgba(76,78,100,0.08) inset',

@@ -65,7 +65,7 @@ const Features = () => {
       id="features"
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundColor: '#F8F7FA',
+        backgroundColor: 'white',
         position: 'relative',
       }}
     >
