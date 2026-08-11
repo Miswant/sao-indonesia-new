@@ -65,7 +65,7 @@ const Features = () => {
       id="features"
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: '#F8F7FA',
         position: 'relative',
       }}
     >
@@ -99,7 +99,10 @@ const Features = () => {
                 display: 'inline-block',
               }}
             >
-              Segala yang Anda butuhkan
+              Segala yang{' '}
+              <Box component="span" sx={{ color: theme.palette.primary.main }}>
+                Anda Butuhkan
+              </Box>
             </Typography>
             <Typography
               variant="body1"
@@ -159,21 +162,8 @@ const Features = () => {
                 <CardContent sx={{ p: 3.5, minHeight: 190 }}>
                   <Stack spacing={2} alignItems="center" textAlign="center">
                     <Box
-                      sx={{
-                        width: 56,
-                        height: 56,
-                        borderRadius: '50%',
-                        backgroundColor: alpha(
-                          theme.palette.primary.main,
-                          0.12
-                        ),
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        mb: 1,
-                      }}
-                    >
-                      {feature.icon}
+                      sx={{mb: 1}}
+                    >{feature.icon}
                     </Box>
 
                     <Typography

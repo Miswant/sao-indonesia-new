@@ -57,7 +57,7 @@ const OurUniqueTraits = () => {
       sx={{
         pt: { xs: 2, md: 10 },   // margin atas kecil
         pb: { xs: 8, md: 4 },  // margin bawah tetap lega
-        backgroundColor: 'white',
+        backgroundColor: '#F8F7FA',
       }}
     >
       <Container maxWidth="lg">
@@ -78,7 +78,7 @@ const OurUniqueTraits = () => {
           >
             Apa yang Membuat SAO{' '}
             <Box component="span" sx={{ color: theme.palette.primary.main }}>
-              Berbeda
+              Kami Berbeda
             </Box>
           </Typography>
 
@@ -123,7 +123,7 @@ const OurUniqueTraits = () => {
               <Box
                 key={idx}
                 sx={{
-                  borderRadius: 4,
+                  borderRadius: '12px',
                   p: { xs: 2, md: 3 },
                   textAlign: 'center',
                   color: '#615d5dff',
@@ -132,11 +132,14 @@ const OurUniqueTraits = () => {
                   flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'flex-start',
-                  // transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                  // '&:hover': {
-                  //   transform: 'translateY(-6px)',
-                  //   boxShadow: '0 30px 80px rgba(0,0,0,0.35)',
-                  // },
+                  border: `1px solid ${theme.palette.divider}`,
+                  boxShadow: '0 2px 10px rgba(76,78,100,0.06)',
+                  transition: 'all 0.25s ease-in-out',
+                  '&:hover': {
+                    transform: 'translateY(-6px)',
+                    boxShadow: '0 12px 28px rgba(76,78,100,0.12)',
+                    borderColor: 'rgba(145, 85, 253, 0.4)',
+                  },
                 }}
               >
                 {/* Icon */}

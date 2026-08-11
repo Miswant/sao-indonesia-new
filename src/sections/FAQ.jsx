@@ -46,32 +46,23 @@ const FAQ = () => {
       id="faq"
       sx={{
         py: { xs: 8, md: 12 },
-        background: alpha(theme.palette.primary.main, 0.045),
+        backgroundColor: '#F8F7FA',
       }}
     >
       <Container maxWidth="xl">
         <Stack spacing={6}>
           <Box sx={{ textAlign: 'center' }}>
-            <Chip
-              label="FAQ"
-              size="small"
-              sx={{
-                mb: 2,
-                backgroundColor: alpha(theme.palette.primary.main, 0.12),
-                color: theme.palette.primary.main,
-                fontWeight: 700,
-              }}
-            />
             <Typography
               variant="h3"
               sx={{
                 fontWeight: 700,
                 fontSize: { xs: '1.75rem', md: '2.25rem' },
+                color: theme.palette.text.primary,
               }}
             >
-              Pertanyaan yang Sering{' '}
+              Pertanyaan yang {' '}
               <Box component="span" sx={{ color: theme.palette.primary.main }}>
-                Diajukan
+                Sering Diajukan
               </Box>
             </Typography>
             
@@ -114,12 +105,12 @@ const FAQ = () => {
                       expandIcon={<ExpandMoreIcon />}
                       sx={{ px: 2, py: 1 }}
                     >
-                      <Typography sx={{ fontWeight: 600 }}>{it.q}</Typography>
+                      <Typography sx={{ fontWeight: 600, color: theme.palette.text.primary }}>{it.q}</Typography>
                     </AccordionSummary>
                     <AccordionDetails sx={{ px: 2, pt: 0, pb: 2 }}>
                       <Typography
                         variant="body2"
-                        sx={{ color: theme.palette.text.secondary }}
+                        sx={{ color: theme.palette.text.primary }}
                       >
                         {Array.isArray(it.a) ? it.a.join(' ') : it.a}
                       </Typography>

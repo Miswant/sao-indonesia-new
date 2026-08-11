@@ -67,12 +67,12 @@ const Hero = () => {
                 mb: 1,
               }}
             >
-              Semua dalam satu{' '}
+           
               <Box component="span" sx={{ color: theme.palette.primary.main }}>
-                solusi manajemen
+                Satu Solusi Manajemen 
               </Box>
               <br />
-              untuk usaha Anda
+              untuk Usaha Anda
             </Typography>
 
             <Typography

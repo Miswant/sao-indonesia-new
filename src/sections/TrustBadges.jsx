@@ -17,8 +17,8 @@ const TrustBadges = () => {
     <Box
       component="section"
       sx={{
-        pt: { xs: 8, md: 10 },
-        pb: { xs: 8, md: 0 },
+        pt: '16px',
+        pb: '16px',
         background:
           'linear-gradient(120deg, rgba(150,66,144,1) 0%, rgba(164,101,197,1) 40%, rgba(164,136,240,1) 100%)',
       }}

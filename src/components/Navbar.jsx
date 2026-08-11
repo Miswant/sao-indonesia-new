@@ -17,7 +17,7 @@ import {
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import LogoSao from '../assets/satu-andalan-optima.png';
 
-import { Link as RouterLink } from 'react-router-dom'; 
+import { Link as RouterLink, useLocation  } from 'react-router-dom'; 
 
 
 
@@ -25,6 +25,14 @@ const Navbar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const location = useLocation();
+
+  //Cek apakah menu navbar ini sedang aktif (cocok dengan path atau hash saat ini)
+  const isActive = (to) => {
+    if (to === '/') return location.pathname === '/' && !location.hash;
+    if (to.startsWith('/#')) return location.pathname === '/' && location.hash === to.slice(1);
+    return location.pathname === to;
+  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -77,11 +85,11 @@ const Navbar = () => {
           top: 12,                                
           left: '50%',                            
           transform: 'translateX(-50%)',        
-          width: { xs: '75%', md: '70%' }, 
+          width: { xs: '75%', md: '75%' }, 
           backgroundColor: 'rgba(255, 255, 255, 0.9) ',
           backdropFilter: 'blur(8px)',
           borderBottom: 'none',
-          borderRadius: '5px',
+          borderRadius: '50px',
           boxShadow: '0px 1px 8px 0px rgba(76, 78, 100, 0.12)',
           py: 0.5,
         }}
@@ -97,7 +105,7 @@ const Navbar = () => {
               sx={{
                 mr: 2,
                 display: 'flex',
-                alignItems: 'center',
+                alignItems: 'left',
                 fontWeight: 700,
                 color: '#9155FD',
                 textDecoration: 'none',
@@ -105,7 +113,7 @@ const Navbar = () => {
                 fontSize: '1.5rem',
               }}
             >
-              <img src={LogoSao} alt="Logo Sao" style={{ height: 60 }} />
+              <img src={LogoSao} alt="Logo Sao" style={{ height: 64 }} />
             </Typography>
 
             {isMobile ? (
@@ -127,9 +135,10 @@ const Navbar = () => {
                     to={item.to}
                     sx={{ 
                       mx: 1, 
-                      color: theme.palette.text.primary,
-                      fontWeight: 500,
-                      right: '10%', 
+                      color: isActive(item.to) ? '#9155FD' : theme.palette.text.primary,
+                      fontWeight: isActive(item.to) ? 700 : 500,
+                      backgroundColor: isActive(item.to) ? 'rgba(145, 85, 253, 0.1)' : 'transparent',
+                      right: '20%', 
                       textTransform: 'none',
                       '&:hover': {
                         backgroundColor: 'rgba(145, 85, 253, 0.1)',
