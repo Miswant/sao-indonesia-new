@@ -3,12 +3,32 @@
     "::ffff:127.0.0.1": {
       "count": 0,
       "lastFailedAt": 0
+    },
+    "::1": {
+      "count": 0,
+      "lastFailedAt": 0
     }
   },
   "sessions": {
     "s_crzn8t3oe76_1764222733516": {
       "created": 1764222733516,
       "expires": 1764224533516
+    },
+    "s_96wax3enldc_1786501352822": {
+      "created": 1786501352822,
+      "expires": 1786503152822
+    },
+    "s_bmef8hlwbk8_1786501650720": {
+      "created": 1786501650720,
+      "expires": 1786503450720
+    },
+    "s_a5poeiumair_1786502338296": {
+      "created": 1786502338295,
+      "expires": 1786504138295
+    },
+    "s_2mtw30p1c35_1786502372167": {
+      "created": 1786502372167,
+      "expires": 1786504172167
     }
   }
 }

@@ -68,8 +68,8 @@ const Footer = () => {
       sx={{
         background: '#0b0f19',
         color: 'rgba(255,255,255,0.8)',
-        pt: { xs: 8, md: 4 },
-        pb: 4,
+        pt: 4,
+        pb: 12,
 
       }}
       >
